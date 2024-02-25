@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fitness Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/chat.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to Your Personal Fitness Advisor</h2>
+        <form id="preferencesForm">
+            <label for="fitnessGoal">What's your fitness goal?</label>
+            <select name="fitnessGoal" required>
+                <option value="weight_loss">Weight Loss</option>
+                <option value="muscle_gain">Muscle Gain</option>
+                <option value="endurance">Improve Endurance</option>
+                <option value="flexibility">Improve Flexibility</option>
+                <option value="general_health">General Health Improvement</option>
+            </select>
+            
+            <label for="fitnessLevel">Current fitness level:</label>
+            <select name="fitnessLevel" required>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+            
+            <label for="dietPreference">Dietary preference:</label>
+            <select name="dietPreference" required>
+                <option value="no_preference">No Preference</option>
+                <option value="vegan">Vegan</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="keto">Keto</option>
+                <option value="paleo">Paleo</option>
+                <option value="mediterranean">Mediterranean</option>
+            </select>
+            
+            <label for="equipment">Available equipment (comma-separated):</label>
+            <input type="text" name="equipment" placeholder="None, Gym membership, Dumbbells, etc.">
+            
+            <button type="submit">Submit Preferences</button>
+        </form>
+        
+        <!-- Chat interface, hidden initially and shown after preferences are submitted -->
+        <div id="chatInterface" style="display:none;">
+            <div class="chat-container"></div>
+            <input type="text" id="userInput" placeholder="Type your message...">
+            <button id="sendButton">Send</button>
+            <button id="restartButton" onclick="restartConversation()">Restart</button>
+        </div>
+    </div>
+</body>
+</html>
