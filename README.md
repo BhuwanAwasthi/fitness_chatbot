@@ -44,7 +44,7 @@ fitness-chatbot/
 ## Local Setup
 
 1. **Clone the Repository**
-   git clone <GITHUB_REPOSITORY_URL>
+   git clone (https://github.com/BhuwanAwasthi/fitness_chatbot/)
    cd fitness-chatbot
 
 2. **Install Dependencies**
@@ -64,7 +64,7 @@ fitness-chatbot/
 The chatbot is deployed on PythonAnywhere, accessible at [http://cse2020021049.pythonanywhere.com/](url). The deployment process involves transferring the files to the PythonAnywhere server, installing dependencies, and configuring the WSGI file to point to the Flask application.
 
 ## Video Demonstration
-A comprehensive walkthrough of the chatbot's functionality and deployment is available at <VIDEO_DEMO_LINK>.
+A comprehensive walkthrough of the chatbot's functionality and deployment is available at (https://www.loom.com/share/5e464a35204c4207966e8628b4a71851?sid=6e22115b-e659-40ae-bdd6-740c5cb4881b).
 
 ## Additional Notes
 - Ensure you have the OpenAI API key available as it is required for the chatbot to function correctly.
