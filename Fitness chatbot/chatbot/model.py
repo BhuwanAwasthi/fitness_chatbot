@@ -1,5 +1,5 @@
 import openai
-openai.api_key = "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"
+openai.api_key = "open-aikey"
 
 def get_ai_response(message, preferences):
     try:
