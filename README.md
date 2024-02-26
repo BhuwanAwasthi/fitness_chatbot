@@ -12,21 +12,33 @@ This fitness chatbot is a Flask-based web application designed to provide person
 
 fitness-chatbot/
 │
+
 ├── static/
+
 │   ├── css/
+
 │   │   └── style.css       # CSS file for styling the web interface
+
 │   ├── js/
+
 │   │   └── chat.js         # JavaScript file for handling AJAX requests and UI interactions
+
 │
 ├── templates/
+
 │   └── index.html          # HTML template for the chatbot interface
+
 │
 ├── chatbot/
+
 │   └── model.py            # Handles AI model integration and API requests
+
 │
 ├── app.py                  # Main Flask application
+
 │
 └── requirements.txt        # Lists project dependencies
+
 
 
 ## Local Setup
