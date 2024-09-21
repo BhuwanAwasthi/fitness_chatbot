@@ -105,3 +105,24 @@ button#restartButton {
 button#restartButton:hover {
     background-color: #c82333;
 }
+
+/* Follow-up question styling */
+.follow-up {
+    margin-top: 10px;
+}
+
+.follow-up button {
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.follow-up button:hover {
+    background-color: #0056b3;
+}
