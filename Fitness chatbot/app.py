@@ -19,9 +19,9 @@ def set_preferences():
 @app.route('/chat', methods=['POST'])
 def chat():
     user_message = request.json['message']
-    # Fetch response from ChatGPT model considering user preferences
-    response = get_ai_response(user_message, session.get('preferences', {}))
-    return jsonify({'response': response})
+    # Fetch response and follow-up questions from ChatGPT model considering user preferences
+    result = get_ai_response(user_message, session.get('preferences', {}))
+    return jsonify({'response': result['response'], 'follow_up_questions': result['follow_up_questions']})
 
 if __name__ == '__main__':
     app.run(debug=True)
